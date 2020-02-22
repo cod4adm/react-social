@@ -1,0 +1,32 @@
+.app-wrapper {
+    display: grid;
+
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+
+    grid-template-areas:
+    "header header header"
+    "nav profile profile";
+
+    grid-template-rows: 35px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #576b95;
+}
+
+.header img {
+    width: 35px;
+}
+
+.nav__links {
+    grid-area: nav;
+    border: 1px solid #000000;
+}
+.profile {
+    grid-area: profile;
+}
