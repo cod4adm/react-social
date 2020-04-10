@@ -5,15 +5,14 @@
     width: 100%;
     margin: 0 auto;
 
-    grid-template-areas:
-    "header header header"
-    "nav profile profile";
+    grid-template-areas: "header header header" "nav profile profile";
 
     grid-template-rows: 35px 1fr;
     grid-template-columns: 2fr 10fr;
     grid-gap: 10px;
 }
 
+/* Header */
 .header {
     grid-area: header;
     background-color: #576b95;
@@ -21,12 +20,85 @@
 
 .header img {
     width: 35px;
+    margin-left: 20px;
 }
 
+.login_block {
+    float: right;
+}
+
+.login_block a {
+    color: white
+}
+
+
+/* Navigation */
 .nav__links {
     grid-area: nav;
     border: 1px solid #000000;
+    padding: 40px;
+
 }
+
+.nav__links a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav__links a.active {
+    color: gold;
+}
+
+/* Profile */
 .profile {
     grid-area: profile;
+
+}
+
+.ProfileInfo {
+    padding-left: 20px;
+}
+
+.avatar {
+    width: 80px;
+}
+
+.myPosts {
+    padding-left: 20px;
+}
+
+.post {
+    margin-top: 30px;
+}
+
+/* Messages */
+
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogs__list {
+    padding: 40px;
+}
+
+.dialogs__item {
+
+}
+
+.dialogs__item.active {
+    color: gold;
+}
+
+.messages {
+    padding: 40px;
+}
+
+.message {
+
+}
+
+/* Users */
+.selectedPage {
+    font-weight: 900;
 }
